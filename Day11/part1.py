@@ -4,6 +4,7 @@ from copy import deepcopy
 
 file = open("input.txt", "r")
 original = list(map(list, map(str.rstrip, file.readlines())))
+file.close()
 MAXROW, MAXCOL = len(original) - 1, len(original[0]) - 1
 OCCUPIED, EMPTY, FLOOR = '#L.'
 grid = deepcopy(original)
